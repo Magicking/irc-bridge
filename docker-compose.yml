@@ -1,0 +1,10 @@
+version: '2'
+services:
+  irc-bridge:
+    build: .
+    ports:
+      - 6667:6667
+      - 4567:4567
+    environment:
+      - IRCPORT=6667
+      - WEBPORT=4567
